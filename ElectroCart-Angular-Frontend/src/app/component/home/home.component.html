@@ -1,0 +1,95 @@
+<!-- <p>home works!</p> -->
+
+<h2>WELCOME TO ELECTROCART.</h2>
+
+<ngb-carousel *ngIf="images">
+  <ng-template ngbSlide>
+    <div class="wrapper">
+      <img [src]="images[0]" />
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="wrapper">
+      <img [src]="images[1]" />
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="wrapper">
+      <img [src]="images[2]" />
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="wrapper">
+      <img [src]="images[3]" />
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+<div class="explore-menu-section pt-5 pb-5" id="exploreMenuSection">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="menu-section-heading">EXPLORE PRODUCTS</h2>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 pointer" (click)="gotoLogin()">
+        <div class="shadow menu-item-card p-3 mb-3">
+          <img
+            src="../../../assets/Images/smartphone.jpg"
+            class="menu-item-image w-100"
+          />
+          <h2 class="menu-card-title">SMARTPHONES</h2>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 pointer" (click)="gotoLogin()">
+        <div class="shadow menu-item-card p-3 mb-3">
+          <img
+            src="../../../assets/Images/laptops.jpg"
+            class="menu-item-image w-100"
+          />
+          <h2 class="menu-card-title">LAPTOPS</h2>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 pointer" (click)="gotoLogin()">
+        <div class="shadow menu-item-card p-3 mb-3">
+          <img
+            src="../../../assets/Images/cooler.jpg"
+            class="menu-item-image w-100"
+          />
+          <h2 class="menu-card-title">COOLER</h2>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 pointer" (click)="gotoLogin()">
+        <div class="shadow menu-item-card p-3 mb-3">
+          <img
+            src="../../../assets/Images/air conditioner.png"
+            class="menu-item-image w-100"
+          />
+          <h2 class="menu-card-title">AC</h2>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 pointer" (click)="gotoLogin()">
+        <div class="shadow menu-item-card p-3 mb-3">
+          <img
+            src="../../../assets/Images/tv_image2.jpg"
+            class="menu-item-image w-100"
+          />
+          <h2 class="menu-card-title">TELEVISION</h2>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 pointer" (click)="gotoLogin()">
+        <div class="shadow menu-item-card p-3 mb-3">
+          <img
+            src="../../../assets/Images/airdopes.jpeg"
+            class="menu-item-image w-100"
+          />
+          <h2 class="menu-card-title">AIRDOPES</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

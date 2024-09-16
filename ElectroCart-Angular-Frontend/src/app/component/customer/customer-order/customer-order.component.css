@@ -1,0 +1,70 @@
+/* Centering and Styling */
+.centered {
+  text-align: center;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures borders are collapsed for a cleaner look */
+  margin: 0 auto; /* Centers the table */
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd; /* Light border color */
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4; /* Light background for headers */
+  font-weight: bold;
+}
+
+/* History Icon Styling */
+.history-icon {
+  font-size: 24px;
+  background-color: rgb(72, 16, 85);
+  color: rgb(249, 229, 254);
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.history-icon:hover {
+  background-color: rgb(60, 14, 70);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Payment Button Styling */
+.payment-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(72, 16, 85);
+  color: rgb(249, 229, 254);
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.payment-button:hover {
+  background-color: rgb(60, 14, 70);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  th,
+  td {
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+}

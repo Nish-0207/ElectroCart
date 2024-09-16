@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.background {
+  width: 100vw;
+  height: auto;
+  background: url(/registerbg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  border-radius: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+
+  width: 450px;
+  height: auto;
+}
+
+h2 {
+  color: #ffff;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+
+.form-group {
+  position: relative;
+  width: 330px;
+  margin: 30px 0;
+  border-bottom: 3px solid #ffff;
+}
+
+.form-group input {
+  width: 100%;
+  height: 50px;
+  padding: 0 35px 0 10px;
+  font-size: 1.2em;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.form-group label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  color: #fff;
+  transition: 0.5s;
+}
+
+input:focus ~ label,
+input:valid ~ label,
+input:hover ~ label {
+  top: -5px;
+}
+
+p {
+  text-align: center;
+  color: #fff;
+  margin: 10px 0;
+}
+
+p > a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+p > a:hover {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+#btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 40px;
+  border: none;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#btn:hover {
+  background: rgba(6, 166, 54, 0.3);
+  color: #fff;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.radio-group label {
+  margin-right: 20px;
+  font-size: 1.2em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.date-group {
+  position: relative;
+  width: 330px;
+  margin: 30px 0;
+  border-bottom: 3px solid #fff;
+}
+
+.date-group input[type="date"] {
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  font-size: 1.2em;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+
+  padding-left: 120px;
+}
+
+.date-group label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}

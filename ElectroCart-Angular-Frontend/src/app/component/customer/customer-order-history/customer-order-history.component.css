@@ -1,0 +1,69 @@
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+.header mat-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: rgb(72, 16, 85);
+  transition: color 0.3s ease;
+}
+
+.header mat-icon:hover {
+  color: rgb(60, 14, 70);
+}
+
+/* Scrollable Content Styling */
+.scroll {
+  max-height: 500px; /* Adjust the height as needed */
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.centered {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures borders are collapsed for a cleaner look */
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd; /* Light border color */
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4; /* Light background for headers */
+  font-weight: bold;
+}
+
+/* Image Styling */
+img {
+  max-width: 100px; /* Limit image size */
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  th,
+  td {
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+}

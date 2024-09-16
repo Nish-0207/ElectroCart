@@ -1,0 +1,83 @@
+/* Full Height Container to Center Content */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  background-color: #f0f0f0; /* Light background color for contrast */
+}
+
+.payment-tab {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; /* Maximum width for better readability on large screens */
+}
+
+/* Centering Content */
+.centered {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures borders are collapsed for a cleaner look */
+}
+
+td {
+  padding: 12px;
+  border: 1px solid #ddd; /* Light border color */
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.25);
+}
+
+/* Submit Button Styling */
+.submit-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(72, 16, 85);
+  color: rgb(249, 229, 254);
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: rgb(60, 14, 70);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  td {
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+
+  input {
+    font-size: 14px; /* Adjust input font size for smaller screens */
+  }
+}

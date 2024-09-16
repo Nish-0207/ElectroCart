@@ -1,0 +1,12 @@
+.Main{
+
+    .Header{
+        display:flex;
+        background:rebeccapurple ;
+        justify-content: space-between;
+        height: 50px;
+        align-items: center;
+        font-size: 24px;
+
+    }
+}

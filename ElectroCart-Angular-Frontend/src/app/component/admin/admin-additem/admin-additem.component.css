@@ -1,0 +1,116 @@
+/* Add Electronic Tab Container */
+.add-electronic-tab {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Centered Content */
+.centered {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Heading Styling */
+.add-electronic-tab h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  vertical-align: middle;
+}
+
+td:first-child {
+  font-weight: 500;
+  color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5a2d6a;
+  color: #fff;
+}
+
+/* Color Customization for Primary Button */
+button.mat-raised-button {
+  background-color: rgb(72, 16, 85);
+  color: rgb(249, 229, 254);
+}
+
+button.mat-raised-button:hover {
+  background-color: rgb(62, 14, 74);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .add-electronic-tab {
+    padding: 15px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  td:first-child {
+    font-weight: 400;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  select {
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
+  }
+}

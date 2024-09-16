@@ -1,0 +1,28 @@
+<div class="background">
+  <!--Login Form Start-->
+  <div class="container">
+    <h2>Login</h2>
+
+    <form>
+      <div class="form-group">
+        <input type="email" name="email" [(ngModel)]="email" required />
+        <label for="email">Email</label>
+        <div class="error">{{ errormessage }}</div>
+      </div>
+
+      <div class="form-group">
+        <input
+          type="password"
+          name="password"
+          [(ngModel)]="password"
+          required
+        />
+        <label for="password">Password</label>
+        <div class="error">{{ errormessagep }}</div>
+      </div>
+
+      <button type="button" (click)="signIn()" id="btn">Login</button>
+    </form>
+  </div>
+  <!--Login Form End-->
+</div>

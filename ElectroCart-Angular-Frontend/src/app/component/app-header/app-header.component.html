@@ -1,0 +1,27 @@
+<div class="main">
+  <div>
+    <a routerLink="">
+      <img src="../../../assets/Images/logo7.png" width="10%" height="90%" />
+    </a>
+  </div>
+  <div (click)="gotourl('')" [class.selected]="url === '/'">Home</div>
+  <div (click)="gotourl('about-us')" [class.selected]="url === '/about-us'">
+    AboutUs
+  </div>
+
+  <div
+    (click)="gotourl('customer-login')"
+    [class.selected]="url === '/customer-login'"
+  >
+    CustomerLogin
+  </div>
+  <div
+    (click)="gotourl('admin-login')"
+    [class.selected]="url === '/admin-login'"
+  >
+    AdminLogin
+  </div>
+  <div (click)="gotourl('contact-us')" [class.selected]="url === '/contact-us'">
+    Contactus
+  </div>
+</div>

@@ -1,0 +1,90 @@
+/* Centering and Styling */
+.centered {
+  text-align: center;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures borders are collapsed for a cleaner look */
+  margin: 0 auto; /* Centers the table */
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd; /* Light border color */
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4; /* Light background for headers */
+  font-weight: bold;
+}
+
+/* Image Styling */
+img {
+  max-width: 100px; /* Limit image size */
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Quantity Button Styling */
+.quantity-button {
+  padding: 8px 12px;
+  font-size: 18px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background-color: #007bff; /* Primary button color */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px; /* Set fixed width */
+  height: 36px; /* Set fixed height */
+}
+
+.quantity-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quantity-button:active {
+  background-color: #004080; /* Even darker shade when pressed */
+}
+
+/* Button Container Styling */
+.quantity-button-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Ensure space around the quantity value */
+.quantity-value {
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Delete and Place Order Buttons */
+.delete-button,
+.place-order-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(72, 16, 85);
+  color: rgb(249, 229, 254);
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.delete-button:hover,
+.place-order-button:hover {
+  background-color: rgb(60, 14, 70);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

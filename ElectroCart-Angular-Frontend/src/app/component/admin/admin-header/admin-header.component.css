@@ -1,0 +1,109 @@
+/* Main Header Container */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
+}
+
+/* Logo Styling */
+.main img {
+  max-width: 120px; /* Ensure logo does not exceed a certain width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation Items Styling */
+.main div:not(.user-name-item) {
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #495057;
+  cursor: pointer;
+  transition: color 0.3s ease, border-bottom 0.3s ease, transform 0.2s ease;
+  padding: 8px;
+  position: relative;
+}
+
+.main div:not(.user-name-item)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.main div.selected::after {
+  width: 100%;
+}
+
+.main div:not(.user-name-item):hover {
+  color: #007bff;
+  transform: translateY(-2px);
+}
+
+/* User Name Item Styling */
+.user-name-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.user-name-item div {
+  margin-right: 8px;
+  color: #495057;
+}
+
+.user-name-item mat-icon {
+  font-size: 24px;
+  color: #495057;
+}
+
+/* Menu Button Styling */
+mat-menu button {
+  font-size: 16px;
+  font-weight: 500;
+  color: #495057;
+  padding: 10px 15px;
+  border: none;
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+mat-menu button:hover {
+  background-color: #e9ecef;
+  color: #007bff;
+}
+
+mat-menu button mat-icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  .main img {
+    max-width: 100px; /* Adjust logo size for smaller screens */
+  }
+
+  .main div:not(.user-name-item) {
+    margin: 8px 0;
+    font-size: 16px;
+  }
+
+  .user-name-item {
+    margin-top: 10px;
+  }
+}

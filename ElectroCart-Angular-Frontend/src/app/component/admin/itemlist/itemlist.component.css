@@ -1,0 +1,116 @@
+/* Centering and Styling */
+.centered {
+  text-align: center;
+  margin-top: 20px;
+  padding: 0 20px; /* Added padding to ensure alignment on mobile */
+}
+
+/* Styling for Select Input */
+select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: center;
+}
+
+table th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+table td {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+table img {
+  max-width: 100px; /* Adjust image size as needed */
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Mat Icon Styling */
+mat-icon {
+  cursor: pointer;
+  color: #007bff;
+  font-size: 24px;
+  margin: 0 5px;
+}
+
+mat-icon:hover {
+  color: #0056b3;
+}
+
+/* Paging Styles */
+app-paging {
+  margin: 20px auto;
+}
+
+/* Responsive Design for Table */
+@media (max-width: 768px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  table tr {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+
+  table td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+}

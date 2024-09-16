@@ -1,0 +1,82 @@
+/* Main Header Container */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Logo Styling */
+.logo img {
+  width: 10%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation Items Styling */
+.nav-item {
+  margin: 0 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding: 5px;
+}
+
+.nav-item.selected {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+/* User Name Item Styling */
+.user-name-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-name-item div {
+  margin-right: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.user-name-item mat-icon {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Menu Button Styling */
+mat-menu button {
+  font-size: 14px;
+  font-weight: normal;
+  color: #333;
+}
+
+mat-menu button mat-icon {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo img {
+    width: 20%; /* Adjust logo size for smaller screens */
+  }
+
+  .nav-item {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+
+  .user-name-item {
+    margin-top: 10px;
+  }
+}

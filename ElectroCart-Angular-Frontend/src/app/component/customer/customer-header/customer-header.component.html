@@ -1,0 +1,39 @@
+<!-- <p>customer-header works!</p> -->
+
+<div class="main">
+  <div class="logo">
+    <a routerLink="/customer/home">
+      <img src="../../../assets/Images/logo7.png" alt="Logo" />
+    </a>
+  </div>
+  <div
+    class="nav-item"
+    (click)="routerToLink('/customer/home')"
+    [class.selected]="url === '/customer/home'"
+  >
+    Home
+  </div>
+  <div
+    class="nav-item"
+    (click)="routerToLink('/customer/cart')"
+    [class.selected]="url === '/customer/cart'"
+  >
+    Cart 
+  </div>
+  <div
+    class="nav-item"
+    (click)="routerToLink('/customer/order')"
+    [class.selected]="url === '/customer/order'"
+  >
+    Orders
+  </div>
+  <div [matMenuTriggerFor]="menu" class="user-name-item">
+    <div>{{ userName }}</div>
+    <div><mat-icon>expand_more</mat-icon></div>
+  </div>
+</div>
+<mat-menu #menu="matMenu">
+  <button (click)="routerToLink('/customer/logout')" mat-menu-item>
+    <mat-icon>logout</mat-icon> Logout
+  </button>
+</mat-menu>

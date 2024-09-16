@@ -1,0 +1,23 @@
+h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: x-large;
+
+    background-color: rgb(249, 229, 254);
+    align-items: center;
+    color: rgb(72, 16, 85);
+    font-weight: 500;
+}
+img {
+    width: 100vw;
+    height: 500px;
+    background-color:rgb(249, 229, 254);
+}
+#exploreMenuSection img {
+    height: 203px;
+}
+.shadow {
+
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    background-color: rgb(249, 229, 254);
+}

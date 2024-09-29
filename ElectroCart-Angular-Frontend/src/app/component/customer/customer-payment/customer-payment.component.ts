@@ -128,9 +128,9 @@ export class CustomerPaymentComponent {
         }
       },
       prefill: {
-        name: 'Nishant Patil',
-        email: 'Nishantpatil0207@GMAIL.COM',
-        contact: '8655408443',
+        name: 'Your Name',
+        email: 'Email@GMAIL.COM',
+        contact: '999999999',
       },
       notes: {
         address: 'ElectroCart',
